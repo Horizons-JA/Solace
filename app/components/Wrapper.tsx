@@ -20,23 +20,9 @@ const genAI = new GoogleGenerativeAI(apiKey);
 const model = genAI.getGenerativeModel({
   model: "gemini-2.0-flash-lite-preview-02-05",
   systemInstruction:
-    "You are a quest generator. You will be given a list of things the user must do and you will need to give a list of 10 quests for the user to do based off of the tasks.",
+    "You are survivial expert, the user will provide his current situation and materials they have on hand, please fullfill their request and aid them in their surivial quick and concisely.",
 });
-const jsonData = {
-  description: "A questboard.",
-  type: SchemaType.ARRAY,
-  items: {
-    type: SchemaType.OBJECT,
-    properties: {
-      quest: {
-        type: SchemaType.STRING,
-        description: "Quest3",
-        nullable: false,
-      },
-    },
-    required: ["quest"],
-  },
-};
+
 
 export default function Wrapper() {
   const [input, setInput] = useState("");
@@ -60,7 +46,6 @@ export default function Wrapper() {
           topK: 40,
           maxOutputTokens: 1024,
           responseMimeType: "application/json",
-          responseSchema: jsonData,
         },
       });
       const response = chatSession.response.text();
@@ -144,7 +129,7 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#000",
     borderRadius: 5,
-    maxHeight: 350,
+    maxHeight: 600,
   },
   responseText: {
     fontSize: 16,

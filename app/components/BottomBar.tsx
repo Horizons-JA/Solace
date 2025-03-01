@@ -11,7 +11,6 @@ import Icon from "react-native-vector-icons/Ionicons";
 import * as Haptics from "expo-haptics";
 
 // This BottomBar is likely NOT DONE
-
 const screenWidth = Dimensions.get("window").width;
 const screenW = screenWidth / 3.3;
 const screenHeight = Dimensions.get("window").height;
@@ -38,7 +37,7 @@ export default function BottomBar({ navigation }: any) {
 
   return (
     <View style={styles.BottomBar}>
-      {["home-outline", "lock-closed-outline", "settings-outline"].map(
+      {["home-outline", "add-circle-outline", "settings-outline"].map(
         (icon, index) => (
           <TouchableOpacity
             key={index}
@@ -94,3 +93,4 @@ const styles = StyleSheet.create({
     zIndex: 11,
   },
 });
+
