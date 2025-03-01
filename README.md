@@ -38,9 +38,9 @@ Follow the steps given in the terminal.
 ## Language Support
 
 - English
----------- coming soon
-- Chinese
-- Spanish
+- Coming soon:
+  - Chinese
+  - Spanish
 
 ## Support
 
