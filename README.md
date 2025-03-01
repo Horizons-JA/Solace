@@ -1,13 +1,13 @@
-# Welcome to Unbind
+# Welcome to SolaceAPP
 
-Unbind is a mobile app designed with a gamified experience to help you be productive.
+This is a mobile app designed to enhance user experience for Solace.
 
 The main Unbind features are:
 
 | Features     | Description                                                                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| LLM Models   | Unbind uses **Gemini**                                                                                                                       |
-| Daily Quests | You will be given a questboard every day to complete based off of your real-life tasks, and Unbind will help you keep track and manage them. |
+| LLM Models   | Solace uses **Gemini**                                                                                                                       |
+| Module Integration | Pair your connected modules to your handheld                                                                                             |
 | Placeholder  | Placeholder                                                                                                                                  |
 | Placeholder  | Placeholder                                                                                                                                  |
 | Placeholder  | Placeholder                                                                                                                                  |
@@ -24,7 +24,7 @@ The main Unbind features are:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/unbind-me/unbind.git
+git clone https://github.com/Horizons-JA/Solace.git
 ```
 
 ### Run the project in Expo
@@ -38,9 +38,10 @@ Follow the steps given in the terminal.
 ## Language Support
 
 - English
+---------- coming soon
 - Chinese
 - Spanish
 
 ## Support
 
-Contact us: placeholder@placeholder.com
+Contact us: ahshorizons@gmail.com
